@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
     cors: {
-        origin: "https://vitalsyncs.web.app/", // Allow all origins for testing
+        origin: "http://localhost:3000/", // Allow all origins for testing
         methods: ["GET", "POST"]
     },
     pingTimeout: 100000,
